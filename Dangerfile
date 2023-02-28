@@ -1,4 +1,4 @@
-require 'danger'
+require 'danger/changeset'
 
 MAX_LINES_CHANGED = 5
 changeset = Danger::Changeset.new
