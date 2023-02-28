@@ -1,5 +1,7 @@
 MAX_LINES_CHANGED = 5
 
+warn("Danger warning")
+
 def check_lines_changed
   added_lines = diff.added_lines
   deleted_lines = diff.deleted_lines
