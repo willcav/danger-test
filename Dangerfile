@@ -1,4 +1,7 @@
-MAX_LINES_CHANGED = 1
+MAX_LINES_CHANGED = 5
+
+warn(added_lines)
+warn(deleted_lines)
 
 def check_lines_changed
   lines_changed = added_lines + deleted_lines
