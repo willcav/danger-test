@@ -1,4 +1,4 @@
-require 'danger/changeset'
+require 'danger'
 
 MAX_LINES_CHANGED = 5
 
