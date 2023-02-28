@@ -4,6 +4,7 @@ MAX_LINES_CHANGED = 5
 
 def check_lines_changed
   pr_diff = github.pr_diff
+  message(pr_diff)
   lines_changed = pr_diff.lines_of_code
   message(lines_changed)
   if lines_changed > MAX_LINES_CHANGED
