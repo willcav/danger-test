@@ -1,10 +1,9 @@
 require 'danger/changeset'
 
 MAX_LINES_CHANGED = 5
-changeset = Danger::Changeset.new
 
-
-def check_lines_changed()
+def check_lines_changed
+  changeset = Danger::Changeset.new
   added_lines = changeset.added_lines
   deleted_lines = changeset.deleted_lines
   message(added_lines)
@@ -15,4 +14,4 @@ def check_lines_changed()
   end
 end
 
-check_lines_changed()
+check_lines_changed
