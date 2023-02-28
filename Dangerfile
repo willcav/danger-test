@@ -1,6 +1,7 @@
 MAX_LINES_CHANGED = 5
 
 def check_lines_changed()
+  pr_diff = github.pr_diff
   added_lines = pr_diff.added_lines
   deleted_lines = pr_diff.deleted_lines
   message(added_lines)
