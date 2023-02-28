@@ -1,4 +1,6 @@
 MAX_LINES_CHANGED = 5
+added_lines = diff.added_lines
+deleted_lines = diff.deleted_lines
 
 warn(added_lines)
 warn(deleted_lines)
