@@ -1,4 +1,5 @@
 require 'danger'
+require 'json'
 
 MAX_LINES_CHANGED = 5
 
