@@ -5,7 +5,7 @@ added_lines = 0
 deleted_lines = 0
 
 if git.lines_of_code.added > 0
-  added_lines = git.lines_of_code.added.added
+  added_lines = git.lines_of_code.added
 end
 
 if git.lines_of_code.deleted > 0
