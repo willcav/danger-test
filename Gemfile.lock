@@ -30,6 +30,8 @@ GEM
     faraday-http-cache (2.4.1)
       faraday (>= 0.8)
     faraday-net_http (3.0.2)
+    faraday-retry (2.0.0)
+      faraday (~> 2.0)
     git (1.14.0)
       addressable (~> 2.8)
       rchardet (~> 1.8)
@@ -60,6 +62,7 @@ PLATFORMS
 
 DEPENDENCIES
   danger
+  faraday-retry
   json
 
 BUNDLED WITH
