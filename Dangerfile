@@ -1,5 +1,3 @@
-require 'danger'
-
 MAX_LINES_CHANGED = 1
 
 added_lines = git.lines_of_code.added
