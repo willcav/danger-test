@@ -4,7 +4,7 @@ MAX_LINES_CHANGED = 1
 
 dangerfile = Danger::Dangerfile.new
 
-dangerfile.evaluate do
+evaluate do
   added_lines = git.lines_of_code.added
   deleted_lines = git.lines_of_code.deleted
 
