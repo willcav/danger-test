@@ -2,9 +2,9 @@ require 'danger'
 
 MAX_LINES_CHANGED = 1
 
-require 'danger'
+dangerfile = Danger::Dangerfile.new
 
-Danger::Dangerfile.new.evaluate do
+dangerfile.evaluate do
   added_lines = git.lines_of_code.added
   deleted_lines = git.lines_of_code.deleted
 
