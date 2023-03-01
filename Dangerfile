@@ -1,7 +1,16 @@
 MAX_LINES_CHANGED = 1
 
-added_lines = git.lines_of_code.added
-deleted_lines = git.lines_of_code.deleted
+
+added_lines = 0 
+deleted_lines = 0
+
+if git.lines_of_code.added > 0
+  added_lines = git.lines_of_code.added.added
+end
+
+if git.lines_of_code.deleted > 0
+  deleted_lines = git.lines_of_code.deleted
+end
 
 total_lines_changed = added_lines + deleted_lines
 
